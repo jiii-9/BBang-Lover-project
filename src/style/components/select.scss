@@ -1,0 +1,106 @@
+@import '../constants/color';
+@import '../constants/font';
+
+.select {
+  margin-bottom: 30px;
+
+  .inner {
+    .select-box {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      background-color: $sub-color;
+  
+      &:hover {
+        cursor: pointer;
+      }
+      
+      .character-box,
+      .area-box {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        margin-left: 8px;
+  
+        .down__icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 22px;
+          height: 22px;
+          margin-right: 6px;
+          font-size: 18px;
+          color: $white-color
+        }
+    
+        .select__name {
+          font-family: $font-main;
+          font-size: 15px;
+          font-weight: 500;
+          color: $white-color
+        }
+      }
+      
+      .button__list {
+        padding: 8px;
+  
+        &.hide {
+          display: none;
+        }
+
+        .button__item {
+          display: inline-block;
+          border: none;
+          border-radius: 20px;
+          margin-bottom: 6px;
+          margin-right: 6px;
+          color: $black-color;
+          background-color: $button-color;
+          transition: all .3s ease-in-out;
+          
+          &.active {
+            color: $white-color;
+            background-color: $main-color;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+          
+          .button__input[type= "checkbox"] {
+            display: none;
+            
+          }
+      
+
+          .button__name {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+  
+    .search__btn {
+      display: block;
+      border: none;
+      border-radius: 8px;
+      margin: auto;
+      padding: 6px 30px;
+      font-weight: 700;
+      color: $black-color;
+      background-color: $button-color;
+      transition: all .3s ease-in-out;
+  
+      &:hover {
+        color: $white-color;
+        background-color: $sub-color;
+        cursor: pointer;      
+      }
+    }
+  }
+
+  
+}

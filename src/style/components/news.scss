@@ -1,0 +1,56 @@
+@import '../constants/color';
+
+.news {
+  width: 100%;
+  margin-bottom: 30px;
+
+  .news__title {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__list {
+    padding: 0;
+
+    .news__item {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      background-color: $sub-color;
+      overflow: hidden;
+
+      &:hover {
+        cursor: pointer;
+      }
+      
+      .news-item__title {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        width: 210px;
+        font-weight: 700;
+        color: $white-color;
+        z-index: 1;
+      }
+
+      .news__image {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .image__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #333;
+        opacity: .6;
+      }
+    }
+  }
+}

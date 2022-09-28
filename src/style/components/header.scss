@@ -1,0 +1,59 @@
+@import '../constants/color';
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 15px;
+
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+
+    .logo {
+      &:hover {
+        cursor: pointer;
+      }
+
+      img {
+        width: 30px;
+        height: auto;
+      }
+    }
+  
+    .search {
+      position: relative;
+      
+      input {
+        width: 250px;
+        height: 40px;
+        border: none;
+        border-radius: 8px;
+        padding: 0 30px;
+        background-color: #ececec;
+      }
+      &__icon {
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        transform: translateY(-50%);
+        color: $main-color;
+      }
+    }
+
+    .notification {
+      &:hover {
+        cursor: pointer;
+      }
+
+      &__icon {
+        width: 20px;
+        height: 20px;
+        color: $main-color;
+      }
+    }
+  }
+}
