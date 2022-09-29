@@ -4,7 +4,7 @@ import Start from "./pages/Start";
 import Home from "./pages/Home";
 import Recommend from "./pages/Recommend";
 import Detail from "./pages/Detail";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 import characterData from "./dummy-data/select-data";
 import areaData from "./dummy-data/select-data";
@@ -27,7 +27,7 @@ function App() {
               <Route path="/recommend" element={<Recommend />} />
               <Route path="/detail/:id" element={<Detail />} />
             </Routes>
-            {/* <Footer /> */}
+            <Footer />
           </div>
         </BrowserRouter>
       </NewsListContext.Provider>
