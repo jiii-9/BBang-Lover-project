@@ -1,10 +1,14 @@
-import { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useContext, useState } from "react";
 import { SelectListContext } from "../App";
 
 import News from "./News";
+import { useNavigate } from "react-router-dom";
+
+export const CheckedListContext = React.createContext();
 
 function Select() {
+  const navigate = useNavigate();
+
   const selectList = useContext(SelectListContext);
 
   const characterList = selectList.characterData;
@@ -23,8 +27,6 @@ function Select() {
     Array(areaList.length).fill(false)
   ); // area 버튼의 체크 상태
 
-  const navigate = useNavigate();
-
   const onRemoveCharacter = value => {
     setCheckedCharacterList(
       checkedCharacterList.filter(item => item !== value)
@@ -33,6 +35,15 @@ function Select() {
 
   const onRemoveArea = value => {
     setCheckedAreaList(checkedAreaList.filter(item => item !== value));
+  };
+
+  const handleClick = () => {
+    navigate("/recommend", {
+      state: {
+        checkedCharacterList,
+        checkedAreaList,
+      },
+    });
   };
 
   let characterActiveCopy = [...characterActive];
@@ -88,7 +99,7 @@ function Select() {
               <label
                 className={[
                   "button__item",
-                  characterActiveCopy[item.id] ? "active" : "",
+                  characterActiveCopy[item.id] ? "active" : null,
                 ].join(" ")}
                 htmlFor={item.name}
                 key={item.id}
@@ -145,12 +156,7 @@ function Select() {
                     onCheckedAreaHandler(e.target.checked, e.target.value, idx);
                   }}
                 />
-                <span
-                  className="button__name"
-                  onClick={e => onCheckedAreaHandler(item.id)}
-                >
-                  {item.name}
-                </span>
+                <span className="button__name">{item.name}</span>
               </label>
             ))}
           </div>
@@ -159,17 +165,20 @@ function Select() {
         <button
           className="search__btn"
           onClick={() => {
-            checkedCharacterList.length === 0 && checkedAreaList.length === 0
-              ? window.confirm("찾고싶은 빵을 선택해주세요")
-              : navigate("/recommand");
+            if (
+              checkedCharacterList.length === 0 &&
+              checkedAreaList.length === 0
+            ) {
+              window.confirm("찾고싶은 빵을 선택해주세요");
+            } else {
+              handleClick();
+            }
           }}
         >
           검색하기
         </button>
       </div>
-      <span>
-        {checkedCharacterList} {checkedAreaList}
-      </span>
+
       <News />
     </section>
   );
