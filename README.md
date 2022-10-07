@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Select 버튼 개별 작동
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### map함수로 중복되는 버튼 만들기
 
-## Available Scripts
+```
+<div className={"button__list" + (characterExpanded ? " show" : " hide")}>
+  {characterList.map((item, idx) => (
+    <label
+      className={[
+        "button__item",
+        activeCopy[item.id] ? "active" : null,
+      ].join(" ")}
+      htmlFor={item.name}
+      key={item.id}
+    >
+      <input
+        type="checkbox"
+        id={item.name}
+        className="button__input"
+        value={item.name}
+        name="item-name"
+      />
+      <span className="button__name">{item.name}</span>
+    </label>
+  ))}
+</div>
+```
 
-In the project directory, you can run:
+-
 
-### `npm start`
+### 버튼의 체크여부 확인하기
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+const [characterActive, setCharacterActive] = useState(
+    Array(characterList.length).fill(false)
+);
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 버튼의 개수만큼 배열에 체크상태를 담아준다
+- 기본 체크상태가 담긴 배열을 state에 보관해준다
+- 버튼의 기본 상태는 클릭이 되지 않은 상태이므로 false
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+const [checkedCharacterList, setCheckedCharacterList] = useState([]);
+let characterActiveCopy = [...characterActive];
+const onCheckedHandler = (checked, item, idx) => {
+  if (checked) {
+    setCheckedList([...checkedList, item]);
+    activeCopy[id] = checked;
+    setIsActive(activeCopy);
+  }
+};
+```
 
-### `npm run build`
+- 배열을 복사한 activeCopy는 className을 변경할 때 사용되어야하기 때문에, 전역적으로 사용한다
+- e.target.checked가 true면 체크된 버튼을 모아놓는 배열에 추가해준다
+- 클릭된 버튼의 id를 e.target.checked와 같은 상태로 바꿔준 후 상태변경함수로 state를 변경해준다
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+<input
+  type="checkbox"
+  id={item.name}
+  className="button__input"
+  value={item.name}
+  name="item-name"
+  onChange={e => {
+    onCheckedHandler(
+      e.target.checked,
+      e.target.value,
+      idx
+    );
+  }}
+/>
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- input태그 onChange의 onCheckedHandler함수에 클릭된 버튼의 체크여부와, value값, idx를 담아 호출한다
+- 실수했던 점
+  - id는 고유해서 겹치면 안되는데 map함수로 만들었으니 괜찮을거라고 생각해서 area버튼을 클릭하면 character버튼이 동작하는 문제가 발생했다
+  - id가 겹치지 않도록 item.id 에서 item.name으로 변경해주었다
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+let characterActiveCopy = [...characterActive];
+<label
+  className={[
+    "button__item",
+    characterActiveCopy[item.id] ? "active" : null,
+  ].join(" ")}
+  htmlFor={item.name}
+  key={item.id}
+>
+```
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 클릭된 버튼의 체크여부에 따라 className에 active를 추가/제거 해주었다
