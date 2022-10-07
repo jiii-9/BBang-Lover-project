@@ -14,6 +14,10 @@
       &:hover {
         cursor: pointer;
       }
+
+      &:nth-child(2) {
+        margin-bottom: 16px;
+      }
       
       .character-box,
       .area-box {
@@ -66,7 +70,7 @@
           &:hover {
             cursor: pointer;
           }
-          
+
           .button__input[type= "checkbox"] {
             display: none;
             
@@ -75,8 +79,8 @@
 
           .button__name {
             display: inline-block;
-            font-size: 14px;
-            font-weight: 700;
+            font-size: 12px;
+            font-weight: 600;
             padding: 5px 10px;
           }
         }
@@ -90,6 +94,7 @@
       margin: auto;
       padding: 6px 30px;
       font-weight: 700;
+      margin-bottom: 30px;
       color: $black-color;
       background-color: $button-color;
       transition: all .3s ease-in-out;
