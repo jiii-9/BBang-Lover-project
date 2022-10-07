@@ -19,14 +19,17 @@ function Select() {
   const [checkedCharacterList, setCheckedCharacterList] = useState([]); // 체크된 character버튼을 담을 state
   const [checkedAreaList, setCheckedAreaList] = useState([]); // 체크된 area버튼을 담을 state
 
+  // character 버튼의 체크 상태
   const [characterActive, setCharacterActive] = useState(
     Array(characterList.length).fill(false)
-  ); // character 버튼의 체크 상태
+  );
 
+  // area 버튼의 체크 상태
   const [areaActive, setAreaActive] = useState(
     Array(areaList.length).fill(false)
-  ); // area 버튼의 체크 상태
+  );
 
+  // checked상태의 버튼을 다시 클릭했을 때 취소하기
   const onRemoveCharacter = value => {
     setCheckedCharacterList(
       checkedCharacterList.filter(item => item !== value)
@@ -37,6 +40,7 @@ function Select() {
     setCheckedAreaList(checkedAreaList.filter(item => item !== value));
   };
 
+  // Recommand로 이동하면서 선택된 버튼 리스트 state 전달하는 함수
   const handleClick = () => {
     navigate("/recommend", {
       state: {
