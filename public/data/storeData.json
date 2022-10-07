@@ -1,0 +1,580 @@
+{
+  "store": [
+    {
+      "id": 0,
+      "name": "런던 베이글 뮤지엄 안국점",
+      "area": "#서울",
+      "rate": "4.56",
+      "taste": ["#담백한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220704_18/1656921852880AkpTP_JPEG/0E7A7634.jpg"
+    },
+    {
+      "id": 1,
+      "name": "어글리 베이커리",
+      "area": "#서울",
+      "rate": "4.34",
+      "taste": ["#느끼한", "#건강한", "#고소한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20200811_57/1597153851912zTUxD_JPEG/7kjSXijOz1qdZJ-rGEJW__vY.jpg"
+    },
+    {
+      "id": 2,
+      "name": "카페레이어드 더현대서울점",
+      "area" :"#서울",
+      "rate": "4.41",
+      "taste": ["#달콤한", "#느끼한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20210429_276/1619680270157BWmDj_JPEG/Iwfy5hr33iXW1H4pI6-d5QdA.jpg"
+    },
+    {
+      "id": 3,
+      "name": "서울페이스트리 연남점",
+      "area": "#서울",
+      "rate": "4.46",
+      "taste": ["#달콤한", "#짭짤한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220905_38/16623824602171M2CS_JPEG/KakaoTalk_20220905_215225905_01.jpg"
+    },
+    {
+      "id": 4,
+      "name": "어썸도넛서울",
+      "area": "#서울",
+      "rate": "4.51",
+      "taste": ["#달콤한", "#느끼한", "#부드러운"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220421_256/1650549645288QNwqV_JPEG/01AE2058-82DE-43B1-9D89-DEAC06360E59.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "서울버터샌드",
+      "area": "#서울",
+      "rate": "4.92",
+      "taste": ["#달콤한", "#부드러운"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220727_149/165887279563238FuK_JPEG/07202F16-5C19-42A5-AAB8-069450C90ADA.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "서촌 금상 고로케",
+      "area":"#서울",
+      "rate": "4.85",
+      "taste": ["#건강한", "#짭짤한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220215_246/1644900045538IzJJk_JPEG/KakaoTalk_20220214_193407635_03.jpg"
+    },
+    {
+      "id": 7,
+      "name": "그라동빵집",
+      "area": "#서울",
+      "rate": "4.41",
+      "taste": ["#짭짤한", "#고소한", "#담백한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220630_274/1656579873870sBcRn_JPEG/KBK_1540.JPG"
+    },
+    {
+      "id": 8,
+      "name": "오르랔 베이커리",
+      "area": "#서울",
+      "rate": "4.58",
+      "taste": ["#달콤한", "#담백한", "#촉촉한", "#고소한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20210804_96/1628042458447ymmvH_JPEG/FVASzlcSPxoDM8MdG754w_oj.jpg"
+    },
+    {
+      "id": 9,
+      "name": "피오니",
+      "area": "#서울",
+      "rate": "4.42",
+      "taste": ["#달콤한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20150831_58/14410198877935zMum_JPEG/166580553074202_1.jpg"
+    },
+    {
+      "id": 10,
+      "name": "장블랑제리",
+      "area": "#서울",
+      "rate": "4.44",
+      "taste": ["#달콤한", "#담백한"],
+      "mainImage": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzAzMThfMTkx%2FMDAxNDg5ODEyOTc4NDAz.vYBXvwWSXsCXsCLSFmULXKTr7gWyOGrSK5y9NY435Pkg.8SlMuI8x6PL8-WaTqZT-7zzWUJGiFKhB_zGI3nj_5Z4g.JPEG.art_cream%2F2017-03-16-17-02-08.jpg"
+    },
+    {
+      "id": 11,
+      "name": "해밀 비건베이커리",
+      "area": "#서울",
+      "rate": "4.72",
+      "taste": ["#담백한", "#건강한", "#고소한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20180324_150/1521873590754TEij1_JPEG/clXM4QsSkWdDTPKFy7LYVBzj.JPG.jpg"
+    },
+    {
+      "id": 12,
+      "name": "에스파스 드 콘트란쉐리에 압구정점",
+      "area": "#서울",
+      "rate": "",
+      "taste": ["담백한", "건강한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20211207_149/1638841550964toLpD_PNG/%BF%A1%BD%BA%C6%C4%BD%BA_%B7%CE%B0%ED.png"
+    },
+    {
+      "id": 13,
+      "name": "빵어니스타 이태원점",
+      "area": "#서울",
+      "rate": "",
+      "taste": ["#달콤한", "#건강한", "#고소한", "#부드러운"],
+      "mainImage": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA2MjBfMzMg%2FMDAxNjU1NzMzNjIyNzAy.aQCzh2rly4eDxN5IbXBwjsCwl8YgXIJxtquukeGQWyog.YhHegUVwOgs7JEu89vV5PjkccHTl05Afc9CGLAjYDBsg.JPEG.iamhookedonyou%2FIMG_3211.JPG"
+    },
+    {
+      "id": 14,
+      "name": "지구제과",
+      "area": "#서울",
+      "rate": "4.69",
+      "taste": ["#담백한", "#건강한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20210120_286/1611130598229iV3Px_JPEG/hW5XR-bhRCDvYqa9Sy_Vqob3.jpeg.jpg"
+    },
+    {
+      "id": 15,
+      "name": "레드브릿지",
+      "area": "#경기",
+      "rate": "4.31",
+      "taste": ["#달콤한", "#고소한", "#부드러운", "#쫄깃한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20200217_231/15819329751604fpoV_JPEG/7BLNvweU1aK4q3ZiX3fx6tYU.jpg"
+    },
+    {
+      "id": 16,
+      "name": "류재은 베이커리 본점",
+      "area": "#경기",
+      "rate": "4.28",
+      "taste": ["#달콤한", "#담백한", "#고소한", "#부드러운"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20200713_3/1594608905684OhhDp_JPEG/Y6FNbu_KKxuXWZwfsR5OF2Zr.jpg"
+    },
+    {
+      "id": 17,
+      "name": "소풍농월",
+      "area": "#경기",
+      "rate": "4.57",
+      "taste": ["#달콤한", "#느끼한", "#담백한"],
+      "mainImage": "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMjA5MTlfMjQ3%2FMDAxNjYzNTYyMjgzNDU0.vLg3KIMJrzgUOpEzut9QLg_7-qSCdsWFFRZFOcsBtyQg.nsHF4J8sigdZrW9zocE0C-p60tpMu41Et0YIutw0eHwg.JPEG%2F20220919_133410.jpg"
+    },
+    {
+      "id": 18,
+      "name": "씨엘베이커리",
+      "area": "#경기",
+      "rate": "4.54",
+      "taste": ["#달콤한", "#부드러운", "#고소한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20191127_66/15748403613267VERr_JPEG/RD3erU4XDIZwufsD76eZthmn.jpg"
+    },
+    {
+      "id": 19,
+      "name": "제빵소굽다",
+      "area": "경기",
+      "rate": "4.31",
+      "taste": ["#느끼한", "#담백한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20210412_170/1618188336921D7lLT_JPEG/ROnVxmc4RiqGjEQAJLXYYJMG.JPG.jpg"
+    },
+    {
+      "id": 20,
+      "name": "모어그린",
+      "area": "#경기",
+      "rate": "4.54",
+      "taste": ["고소한", "#짭짤한", "#느끼한", "#담백한", "#건강한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220312_61/1647053592571I8Jb8_JPEG/74EF240C-452A-4EBB-AFA0-8B4A19784793.jpeg"
+    },
+    {
+      "id": 21,
+      "name": "혜경궁 베이커리",
+      "area": "#경기",
+      "rate": "",
+      "taste": ["#달콤한", "#담백한", "#쫄깃한", "#부드러운"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20201113_141/1605228038382iCL9Y_JPEG/Sg7TDLxE6QmUuDP1nE0bay9M.jpg"
+    },
+    {
+      "id": 22,
+      "name": "키로베이커리",
+      "area": "#경기",
+      "rate": "4.23",
+      "taste": ["#건강한", "#담백한", "#고소한", "#짭짤한", "#쫄깃한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220714_121/1657764176817aRIcQ_JPEG/C04BF931-5203-409D-890E-FB1C55ACB8D0.jpeg"
+    },
+    {
+      "id": 23,
+      "name": "윤쉐프 정직한제빵소",
+      "area": "#경기",
+      "rate": "",
+      "taste": ["#짭짤한", "#고소한", "#느끼한", "#건강한", "#부드러운", "#담백한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20210526_153/1622004349436YAGV3_JPEG/oOW_8zeHxNs5beS1S09tLJCD.jpg"
+    },
+    {
+      "id": 24,
+      "name": "하얀풍차제과점 망포점",
+      "area": "#경기",
+      "rate": "4.42",
+      "taste": ["#부드러운", "#느끼한", "#달콤한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20160119_115/1453213842562HrAXC_JPEG/176069636061544_0.jpeg"
+    },
+    {
+      "id": 25,
+      "name": "빵선생 샹그리나 파라다이스",
+      "area": "#경기",
+      "rate": "4.44",
+      "taste": ["#달콤한", "#고소한", "#짭짤한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20210318_119/1616056415803EANL3_JPEG/AbWy_DgKWi6MbQnER5CWT9vR.jpg"
+    },
+    {
+      "id": 26,
+      "name": "몽트리베이커리",
+      "area": "#경기",
+      "rate": "4.34",
+      "taste": ["#느끼한", "#담백한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20200123_192/1579740106822O9NlF_JPEG/Pz9bZ3g_fxbfzVH5HpocTF-D.jpg"
+    },
+    {
+      "id": 27,
+      "name": "천연발효 비건 나정빵집",
+      "area": "#경기", 
+      "rate": "4.65",
+      "taste": ["#담백한", "#고소한", "#건강한", "#쫄깃한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20191125_140/1574653384876D8pi1_JPEG/Jl18meMNJUBsi5VdiXVG7SnE.jpg"
+    },
+    {
+      "id": 28,
+      "name": "비건베이커리 본이",
+      "area": "#경기",
+      "rate": "",
+      "taste": ["#고소한", "#쫄깃한", "#부드러운", "#건강한", "#담백한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220511_178/1652246434180jaA29_JPEG/KakaoTalk_20220511_135937954_02.jpg"
+    },
+    {
+      "id": 29,
+      "name": "소담하담",
+      "area": "#경기",
+      "rate": "4.8",
+      "taste": ["#달콤한", "#건강한", "#고소한", "#담백한", "#쫄깃한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20210406_241/16177035873444jkr1_JPEG/uD7fKVuLC3mHewIRuVXG1iNM.jpg"
+    },
+    {
+      "id": 30,
+      "name": "샹끄발레르",
+      "area": "#인천",
+      "rate": "4.44",
+      "taste": ["#달콤한", "#고소한", "#느끼한", "#촉촉한", "#부드러운"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20200825_270/1598325857090Y8Lwo_JPEG/moa1-2.jpg"
+    },
+    {
+      "id": 31,
+      "name": "버터풀앤크리멀러스 송도점", 
+      "area": "#인천",
+      "rate": "4.29",
+      "taste": ["#달콤한", "#느끼한", "#촉촉한", "#부드러운"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220303_30/1646301009284267Wc_JPEG/%C7%A5%C1%F6.jpg"
+    },
+    {
+      "id": 32,
+      "name": "꽈페 송도국제도시점",
+      "area": "#인천",
+      "rate": "",
+      "taste": ["#달콤한", "#느끼한", "#고소한", "#쫄깃한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20211207_239/16388723512537UYhd_JPEG/KakaoTalk_20210819_155033583_09.jpg"
+    },
+    {
+      "id": 33,
+      "name": "마크빈 베이커리 구월점",
+      "area": "#인천",
+      "rate": "4.48",
+      "taste": ["#고소한", "#부드러운", "#담백한", "#쫄깃한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20211006_15/16334557126870XyNW_JPEG/TktLaETuHBcWrSebmpf-1KRS.jpg"
+    },
+    {
+      "id":34,
+      "name": "베이커리 밀집",
+      "area": "#인천",
+      "rate": "4.79",
+      "taste": ["#담백한", "#고소한", "#쫄깃한", "#건강한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20210516_88/1621106544756TmC7U_JPEG/99SEhWvGrO4Q9JupSLFNblMk.jpeg.jpg"
+    },
+    {
+      "id": 35,
+      "name": "돌멘베이커리",
+      "area": "#인천",
+      "rate": "4.75",
+      "taste": ["#달콤한", "#담백한", "#건강한", "#고소한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220610_13/1654844561272pJBya_JPEG/KakaoTalk_Photo_2022-06-10-15-44-34.jpeg"
+    },
+    {
+      "id": 36,
+      "name": "브레댄코 영종구읍뱃터점",
+      "area": "#인천",
+      "rate": "4.6",
+      "taste": ["#달콤한", "#고소한", "#느끼한", "#담백한", "#쫄깃한", "#부드러운"],
+      "mainImage": "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMjEwMDNfMTQ3%2FMDAxNjY0Nzc2OTU3MzA5.Q5OPiVif_VbNHYY-o66B7y1M9Clb9-UKUBqmOw8cMHkg.yirMPSwG-zDTi9rkJBW8EKnhO-DF3IHQkUd7xlHnrSgg.JPEG%2F20B7C20B-2792-406F-896D-209BDC388559.jpeg"
+    },
+    {
+      "id": 37,
+      "name": "홍종흔베이커리 강화점",
+      "area": "#인천",
+      "rate": "",
+      "taste": ["#고소한", "#짭짤한", "#부드러운"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220722_125/1658477590414KduPc_JPEG/KakaoTalk_20220722_170820787_02.jpg"
+    },
+    {
+      "id": 38,
+      "name": "감자밭",
+      "area": "#강원도",
+      "rate": "4.4",
+      "taste": ["#고소한", "#쫄깃한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20190719_37/1563524078828qIkz3_JPEG/DHngFYRQwF4ELG3mbCBOGT5L.jpg"
+    },
+    {
+      "id": 39,
+      "name": "네이키드베이커리",
+      "area": "#강원도",
+      "rate": "4.55",
+      "taste": ["#담백한", "#건강한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20190106_160/1546751688465gbcRm_JPEG/49HJOusq_vf-hvW6M_UTo5Qx.jpg"
+    },
+    {
+      "id": 40,
+      "name": "오그란이 단팥빵",
+      "area": "#강원도",
+      "rate": "4.84",
+      "taste": ["#느끼한", "#쫄깃한", "#건강한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20210719_90/16267065549190gx82_JPEG/0dKHTCCFGB9_AAdZi3Py2sT7.jpeg.jpg"
+    },
+    {
+      "id": 41,
+      "name": "강릉오빠",
+      "area": "#강원도",
+      "rate": "4.51",
+      "taste": ["#달콤한", "#느끼한", "#촉촉한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20201029_187/1603961072046c8EvQ_JPEG/pGfAHBR-4wQIp5HEEB20ongQ.jpg"
+    },
+    {
+      "id": 42,
+      "name": "빵 느루",
+      "area": "#강원도",
+      "rate": "4.59",
+      "taste": ["#담백한", "#부드러운", "#쫄깃한", "#촉촉한"],
+      "mainImage": "https://pup-review-phinf.pstatic.net/MjAyMjA4MTdfMjQ0/MDAxNjYwNzIxNTc3Nzgw.pVjm96lPDqQg5ym2MwvKG5EfrPcuREH1rCSe2yKLZ7og.IsB8kvZd-_70QivC_GpjQZ634mVL0mNWx0qxyhlcYIAg.JPEG/upload_ce1551113fb06ad47c6c9e2bd3e1c2d8.jpeg"
+    },
+    {
+      "id": 43,
+      "name": "숨쉬는제빵소",
+      "area": "#강원도",
+      "rate": "4.33",
+      "taste": ["#고소한", "#건강한", "#부드러운", "#촉촉한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220111_292/1641894942441hdJCn_JPEG/IMG_20211103_204204_630.jpg"
+    },
+    {
+      "id": 44,
+      "name": "저스트메리드베이커리",
+      "area": "#강원도",
+      "rate": "",
+      "taste": ["#고소한", "#담백한", "#바삭한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220201_174/1643695961157XQhY9_JPEG/ED078FF8-1D16-40E2-AF82-92E076006C6B.jpeg"
+    },
+    {
+      "id": 45,
+      "name": "온의동베이커리",
+      "area": "#강원도",
+      "rate": "4.47",
+      "taste": ["#짭짤한", "#부드러운", "#촉촉한"],
+      "mainImage": "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMjA5MTNfMjU4%2FMDAxNjYzMDAzNDU3NDc5.NnHgwA0Wj_s8L2PieMcWyHg_FXMAl1KPM9BiDHNQGvkg.aJLyv3ENKE_PVjEnbS8CNlB_pv_2iVypMbuJVF68bIsg.JPEG%2F5474F7A9-8D8D-4C58-AAA7-F5CA21EBB866.jpeg"
+    },
+    {
+      "id": 46,
+      "name": "베이커리이와정",
+      "area": "#충청도",
+      "rate": "4.83",
+      "taste": ["#고소한", "#건강한", "#담백한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20211010_69/1633853679553Ye7hW_JPEG/IJEGxvvS8njCJQM1Hx2h1e_n.jpeg.jpg"
+    },
+    {
+      "id": 47,
+      "name": "듀레베이커리 테크노폴리스점",
+      "area": "#충청도",
+      "rate": "4.47",
+      "taste": ["#느끼한", "#건강한", "#짭짤한", "#담백한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20210814_220/1628898967305a7oyU_JPEG/Nlra58HtG4y5djKeR92c24wW.jpg"
+    },
+    {
+      "id": 48,
+      "name": "안셈",
+      "area": "#충청도",
+      "rate": "4.86",
+      "taste": ["#달콤한", "#고소한", "#짭짤한", "#부드러운", "#바삭한"],
+      "mainImage": "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMjA4MjRfNDcg%2FMDAxNjYxMzQ5NTI0Mzcy.gnEJsGqRtQUBHwbPEKpEYzHVCHDs7kd_TV3bCizDGw8g.-MDQqKq3vED3BJChuYs6uaruaYitnbDoLwU6s2wBjMQg.JPEG%2F93A198DF-D5FD-4001-93B7-C6ECC1CA8AC0.jpeg"
+    },
+    {
+      "id": 49,
+      "name": "마블스퀘어",
+      "area": "#충청도",
+      "rate": "4.52",
+      "taste": ["#달콤한", "#느끼한", "#고소한", "#짭짤한", "#부드러운", "#담백한", "#쫄깃한", "#촉촉한"],
+      "mainImage": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA5MTdfNzMg%2FMDAxNjYzNDA1NTM5MzU1.89nVzy2HH1EPP_ceb2-gUC5ABctyxnUXsLLgnH6_HEcg.GUSvqPsyFXLTFKi6XKtXwbPjj8pmf2hN-4vgYnDkCwIg.JPEG.hyununglee%2FKakaoTalk_20220917_175255809_01.jpg"
+    },
+    {
+      "id": 50,
+      "name": "브리스",
+      "area": "#충청도",
+      "rate": "4.66",
+      "taste": ["#고소한", "#건강한", "#담백한", "#쫄깃한", "#바삭한"],
+      "mainImage": "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fmyplace-phinf.pstatic.net%2F20211020_249%2F1634711610746XlSxu_JPEG%2Fupload_b92830195963e76ced89759515ec7010.jpeg"
+    },
+    {
+      "id": 51,
+      "name": "청주당베이커리",
+      "area": "#충청도",
+      "rate": "4.81",
+      "taste": ["#건강한", "#담백한", "#쫄깃한", "#바삭한", "#촉촉한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20201012_223/1602503306211JAaKd_JPEG/wamGU2mAoskkI4hyzHS5G087.jpg"
+    },
+    {
+      "id": 52,
+      "name": "PNB 풍년제과 본점",
+      "area": "#전라도",
+      "rate": "4.38",
+      "taste": ["#달콤한", "#고소한", "#부드러운", "#담백한", "#바삭한" ,"#촉촉한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20160921_216/1474419723827S9GVI_JPEG/176871503223614_0.jpeg"
+    },
+    {
+      "id": 53,
+      "name": "멀티베이크샵",
+      "area": "#전라도",
+      "rate": "4.86",
+      "taste": ["#달콤한", "#고소한", "#담백한", "#바삭한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20210803_98/16279581968036yWsg_JPEG/G-xW-oOfb7sp3pC8AcM9gyJH.jpg"
+    },
+    {
+      "id": 54,
+      "name": "송해븐",
+      "area": "#전라도",
+      "rate": "4.89",
+      "taste": ["#달콤한", "#고소한", "#담백한", "#바삭한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220804_79/1659623968372KJnVJ_JPEG/1_%283%29.jpg"
+    },
+    {
+      "id": 55,
+      "name": "로프",
+      "area": "#전라도",
+      "rate": "4.46",
+      "taste": ["#달콤한", "#고소한", "#부드러운", "#담백한","#바삭한"],
+      "mainImage": "https://pup-review-phinf.pstatic.net/MjAyMjA5MTBfNzkg/MDAxNjYyNzg1OTIxODQw.WoRfJ32bHETxjd2ikzDOjpfE-fdtr8jRHvKfWcBuVykg.vDEVtQtjm7av1jtBPhPgo2tMCwhrUN4qom8aoMZdY5Ig.JPEG/D77FC950-250D-40FE-A187-CF246647D8BE.jpeg"
+    },
+    {
+      "id": 56,
+      "name": "리베이커리",
+      "area": "#전라도",
+      "rate": "4.31",
+      "taste": ["#달콤한", "#고소한", "#부드러운", "#담백한", "#쫄깃한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20200117_291/1579253989346ADIj9_JPEG/GBWf2bkaTvdBC_96nvavAkg5.jpg"
+    },
+    {
+      "id": 57,
+      "name": "버니브레드",
+      "area": "#전라도",
+      "rate": "4.91",
+      "taste": ["#느끼한", "#고소한", "#짭짤한", "#쫄깃한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220126_141/16431337854156ewiI_JPEG/20220125_124212.jpg"
+    },
+    {
+      "id": 58,
+      "name": "메종드르뱅",
+      "area": "#경상도",
+      "rate": "",
+      "taste": ["#달콤한", "#고소한", "#건강한", "#담백한", "#바삭한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20171207_140/1512655724470tsNTc_JPEG/dVD0bN7th8XCIra-nIilZJu0.JPG.jpg"
+    },
+    {
+      "id": 59,
+      "name": "오쓰리",
+      "area": "#경상도",
+      "rate": "4.68",
+      "taste": ["#달콤한", "#고소한", "#건강한", "#짭짤한", "#부드러운", "#담백한", "#촉촉한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20210602_151/1622631212067WdCFl_JPEG/UuX6rm7T1OVwfOB908gy0yAP.jpg"
+    },
+    {
+      "id": 60,
+      "name": "르뱅스타독일빵집",
+      "area": "#경상도",
+      "rate": "4.28",
+      "taste": ["#고소한", "#짭짤한", "#담백한", "#쫄깃한", "#바삭한"],
+      "mainImage": "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMjA5MDdfMjYz%2FMDAxNjYyNDgzMzkyOTkz.5GzQoGkL_MYE4KRgyKczUvBvK5W-9WnApNUyV3PJZwUg.QFKkjcYl8PDtig_JRO1hzgpqCZHHsCo02b6Um9PvNSkg.JPEG%2FAB435943-2044-445C-B365-748EE302493F.jpeg"
+    },
+    {
+      "id": 61,
+      "name": "슬로우오븐",
+      "area": "#경상도",
+      "rate": "4.53",
+      "taste": ["#달콤한", "#고소한", "#건강한", "#짭짤한", "#부드러운", "#담백한", "#쫄깃한", "#촉촉한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20210307_137/1615128105221QGU6A_JPEG/UxUIHZKCOYIv6Wd_7fI8Cw1O.jpeg.jpg"
+    },
+    {
+      "id": 62,
+      "name": "워터베이커리",
+      "area": "#경상도",
+      "rate": "",
+      "taste": ["#달콤한", "#고소한", "#짭짤한", "#부드러운", "#부드러운", "#쫄깃한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20211211_44/1639202379527lbfvk_PNG/logo_blue.png"
+    },
+    {
+      "id": 63,
+      "name": "살롱과자점",
+      "area": "#경상도",
+      "rate": "4.49",
+      "taste": ["#달콤한", "#느끼한", "#고소한", "#담백한", "#쫄깃한", "#바삭한", "촉촉한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220617_272/1655443103056FkrDd_JPEG/KakaoTalk_20220616_162333594_24.jpg"
+    },
+    {
+      "id": 64,
+      "name": "레이어스베이크하우스",
+      "area": "#제주도",
+      "rate": "4.91",
+      "taste": ["#달콤한", "#고소한", "#부드러운", "#담백한", "#쫄깃한", "#바삭한", "#촉촉한"],
+      "mainImage": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MzBfMjI3%2FMDAxNjUzODc5OTYxODc3.hJ7J8blMqxcLp2xy3lRDFddE6bztjus9TeClpJnD5lkg.9RUHwxQD6hDUP1CQ4wul3JbK2IiH2ppGvsvoEbtG1Kog.JPEG.tmdgml1504%2FIMG_9013.jpg"
+    },
+    {
+      "id": 65,
+      "name": "르바게트",
+      "area": "#제주도",
+      "rate": "4.76",
+      "taste": ["#달콤한", "#느끼한", "#고소한", "#건강한", "#짭짤한", "#바삭한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20210401_66/161722538696289GAS_JPEG/6zfHiJ5vUC9FkUSnQ7lDmxv7.jpeg.jpg"
+    },
+    {
+      "id": 66,
+      "name": "베이커리 우빵",
+      "area": "#제주도",
+      "rate": "4.8",
+      "taste": ["#고소한", "#건강한", "#부드러운", "#담백한", "#바삭한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20211026_159/1635230104093H2l9C_JPEG/qI9rMM0Itt8fwuXIWJ9uZ0hk.jpg"
+    },
+    {
+      "id": 67,
+      "name": "도도름",
+      "area": "#제주도",
+      "rate": "4.37",
+      "taste": ["#달콤한", "#짭짤한", "#담백한", "#쫄깃한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20201001_125/1601520804402EVUBP_JPEG/G-y1hfMpP7Z1qHHYJUnl30gq.jpeg.jpg"
+    },
+    {
+      "id": 68,
+      "name": "크로와상 제주빵집",
+      "area": "#제주도",
+      "rate": "4.63",
+      "taste": ["#고소한", "#건강한", "#짭짤한", "#부드러운", "#담백한", "#쫄깃한", "#바삭한", "#촉촉한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220319_9/1647672728877AGAlN_JPEG/20220319_155105.jpg"
+    },
+    {
+      "id": 69,
+      "name": "아왜낭목제빵소",
+      "area": "#제주도",
+      "rate": "",
+      "taste": ["#고소한", "#짭짤한", "#부드러운", "#담백한", "#쫄깃한", "#촉촉한"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20220621_239/1655777627185R6YOj_JPEG/KakaoTalk_20220620_201417283_03.jpg"
+    },
+    {
+      "id": 70,
+      "name": "안녕구움",
+      "area": "#제주도",
+      "rate": "4.67",
+      "taste": ["#고소한", "#건강한", "#부드러운", "#담백한", "#바삭한", "#쫄깃한"],
+      "mainImage": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA0MTNfMjY0%2FMDAxNjQ5ODEwMjk1MzM1.UyDPECSluEXjXt3L7PRUpeJXinM-VDJUMSSlAQ9SQX0g.m1LwPzAjeLkxUa1qmkpo_3RtXLK9KPnmJeQbInM6tUMg.JPEG.ayoomi%2F20211023_103225.jpg"
+    },
+    {
+      "id": 71,
+      "name": "제주애단비 유안",
+      "area": "#제주도",
+      "rate": "4.9",
+      "taste": ["#고소한", "#건강한", "#부드러운", "#담백한", "#쫄깃한", "#촉촉"],
+      "mainImage": "https://ldb-phinf.pstatic.net/20210415_178/1618469820280Ki5mg_JPEG/rQIdUrcExGEpmzqB_21GxDFr.jpg"
+    }
+  ]
+}
