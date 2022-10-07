@@ -14,6 +14,7 @@ import "./style/main.scss";
 
 export const SelectListContext = React.createContext();
 export const NewsListContext = React.createContext();
+export const StoreListContext = React.createContext();
 
 function App() {
   return (
