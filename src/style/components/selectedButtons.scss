@@ -1,0 +1,20 @@
+@import '../constants/color';
+
+.selected-btns {
+  margin-bottom: 20px;
+  .selected-box {
+    &__item {
+      display: inline-block;
+      border: none;
+      border-radius: 20px;
+      padding: 5px 10px;
+      margin-bottom: 6px;
+      margin-right: 3px;
+      color: $white-color;
+      font-size: 12px;
+      font-weight: 600;
+      background-color: $main-color;
+      transition: all .3s ease-in-out;
+    }
+  }
+}
