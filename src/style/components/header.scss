@@ -27,14 +27,6 @@
     .search {
       position: relative;
       
-      input {
-        width: 250px;
-        height: 40px;
-        border: none;
-        border-radius: 8px;
-        padding: 0 30px;
-        background-color: #ececec;
-      }
       &__icon {
         position: absolute;
         top: 50%;
@@ -42,6 +34,25 @@
         transform: translateY(-50%);
         color: $main-color;
       }
+      
+      input {
+        width: 250px;
+        height: 40px;
+        border: none;
+        border-radius: 8px;
+        padding: 0 30px;
+        background-color: #ececec;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          font-size: 12px;
+        }
+
+      }
+
     }
 
     .notification {
