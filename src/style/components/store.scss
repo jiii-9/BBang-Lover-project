@@ -1,0 +1,51 @@
+@import '../constants/color';
+@import '../constants/font';
+
+.store {
+  margin-bottom: 30px;
+  &__title {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+  &__list {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 10px;
+    .store__item {
+      .store__cover {
+        width: 50%;
+        position: relative;
+        width: 100%;
+        padding-bottom: 100%;
+        overflow: hidden;
+        
+        .store__img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+
+      .store__info {
+        .store__name {
+          font-family: $font-main;
+          font-weight: 700;
+          font-size: 15px;
+        }
+        .store__rate {
+          font-family: $font-sub;
+          font-weight: 600;
+          font-size: 14px;
+        }
+      }
+      
+    }
+  }
+}
