@@ -1,10 +1,14 @@
+@import "../constants/demensions";
 @import '../constants/color';
+@import '../constants/font';
+@import '../mixins/responsive';
 
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: $header-height-sm;
+  border-bottom: 1px solid rgb(228, 228, 228);
   margin-bottom: 15px;
 
   &-box {
@@ -23,39 +27,21 @@
         height: auto;
       }
     }
-  
-    .search {
-      position: relative;
-      
-      &__icon {
-        position: absolute;
-        top: 50%;
-        left: 8px;
-        transform: translateY(-50%);
-        color: $main-color;
+
+    .logo__text {
+      font-family: $font-logo;
+      font-size: 24px;
+      color: $main-color;
+
+      &:hover {
+        cursor: pointer;
       }
-      
-      input {
-        width: 250px;
-        height: 40px;
-        border: none;
-        border-radius: 8px;
-        padding: 0 30px;
-        background-color: #ececec;
-
-        &:focus {
-          outline: none;
-        }
-
-        &::placeholder {
-          font-size: 12px;
-        }
-
-      }
-
     }
 
     .notification {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       &:hover {
         cursor: pointer;
       }
@@ -63,8 +49,39 @@
       &__icon {
         width: 20px;
         height: 20px;
+        padding: 4px;
         color: $main-color;
       }
+    }
+
+  }
+  @include responsive(T) {
+    height: $header-height-md;
+    margin-bottom: 40px;
+    &-box {
+      .logo {
+        img {
+          width: 40px;
+        }
+      }
+    }
+
+    .logo__text {
+      font-size: 26px;
+    }
+
+    .notification {
+      &__icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    margin-bottom: 50px;
+    .logo__text {
+      font-size: 30px;
     }
   }
 }
