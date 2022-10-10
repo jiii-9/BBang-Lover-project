@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import SelectedButtons from "../components/SelectedButtons";
 import Store from "../components/Store";
 import Footer from "../components/Footer";
-import GoHomeBtn from "../components/goHomeBtn";
+import GoHomeBtn from "../components/GoHome";
 
 function Recommend() {
   const location = useLocation();
