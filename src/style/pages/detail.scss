@@ -1,0 +1,116 @@
+@import '../constants/color';
+@import '../mixins/responsive';
+
+.detail {
+
+  &__store-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .detail__store-cover {
+      position: relative;
+      width: 100%;
+      margin-bottom: 30px;
+      padding-bottom: 70%;
+      overflow: hidden;
+      border-radius: 10px;
+      
+      .detail__store-cover-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0 auto;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      @include responsive(T) {
+        width: 60%;
+        height: 50%;
+      }
+
+      @include responsive(D) {
+        margin-bottom: 60px;
+      }
+    }
+
+    .store__name-rate {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-bottom: 20px;
+      color: $black-color;
+
+      .detail__store-name {
+        font-size: 22px;
+        font-weight: 600;
+        margin-right: 5px;
+      }
+
+      @include responsive(T) {
+        .detail__store-name {
+          margin-right: 10px;
+        }
+      }
+
+      @include responsive(D) {
+        .detail__store-name {
+          font-size: 26px;
+          margin-right: 12px;
+        }
+      }
+    }
+
+    .detail__store-address,
+    .detail__store-operate {
+      display: block;
+      text-align: center;
+      font-weight: 600;
+      color: $black-color;
+
+      }
+    
+    .detail__store-address {
+      margin-bottom: 5px;
+    }
+
+    .detail__store-operate {
+      margin-bottom: 20px;
+
+      @include responsive(D) {
+        margin-bottom: 40px;
+      }
+    }
+
+    .detail__store-des {
+      width: 75%;
+      text-align: center;
+      margin-bottom: 30px;
+      border: 1px solid $main-color;
+      border-radius: 5px;
+
+      p {
+        padding: 15px;
+        font-size: 15px;
+        color: $black-color;
+      }
+      
+      @include responsive(T) {
+        width: 60%;
+        p {
+          padding: 20px;
+        }
+      }
+
+      @include responsive(D) {
+        width: 55%;
+        p {
+          padding: 25px;
+        }
+      }
+    }
+  }
+}
