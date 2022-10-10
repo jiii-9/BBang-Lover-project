@@ -1,22 +1,13 @@
-import { useState, useEffect } from "react";
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { StoreDataContext } from "../App";
 
 function Store({ characterList, areaList }) {
-  // store data를 담을 변수
-  const [storeData, setStoreData] = useState([]);
+  const navigate = useNavigate();
 
-  // store data 가져오기
-  const getStore = async () => {
-    const res = await fetch("http://localhost:3000/data/storeData.json").then(
-      res => res.json()
-    );
-    const store = res.store;
-    setStoreData(store);
-  };
+  const storeData = useContext(StoreDataContext);
 
-  useEffect(() => {
-    getStore();
-  }, []);
-
+  // select 된 버튼과 맞는 store 걸러내기
   const filteredCharacterData = storeData.filter(item => {
     for (let i = 0; i < item.taste.length; i += 1) {
       const target = item.taste[i];
@@ -27,6 +18,7 @@ function Store({ characterList, areaList }) {
     return false;
   });
 
+  // filteredCharacterData값에서 area가 일치하는 store 걸러내기
   const filteredData = filteredCharacterData.filter(item => {
     for (let i = 0; i < item.area.length; i += 1) {
       const target = item.area;
@@ -37,8 +29,6 @@ function Store({ characterList, areaList }) {
     return false;
   });
 
-  console.log(filteredData);
-
   return (
     <section className="store">
       <div className="inner">
@@ -46,7 +36,17 @@ function Store({ characterList, areaList }) {
         <div className="store__list">
           {filteredData.map(item => {
             return (
-              <div key={item.id} className="store__item">
+              <div
+                key={item.id}
+                className="store__item"
+                onClick={() =>
+                  navigate(`/detail/${item.name}`, {
+                    state: {
+                      item,
+                    },
+                  })
+                }
+              >
                 <div className="store__cover">
                   <img
                     src={item.mainImage}
