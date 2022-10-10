@@ -1,13 +1,29 @@
+@import './constants/font';
+@import './mixins/responsive';
+
 * {
+  font-family: $font-main;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  height: 100%;
 }
 
 .inner {
   position: relative;
   width: 360px;
   margin: 0 auto;
+
+  @include responsive(T) {
+    width: 768px;
+  }
+
+  @include responsive(D) {
+    width: 1200px;
+  }
 }
 
 
