@@ -39,7 +39,7 @@
     
         .select__name {
           font-family: $font-main;
-          font-size: 15px;
+          font-size: 13px;
           font-weight: 500;
           color: $white-color
         }
@@ -80,7 +80,6 @@
           .button__name {
             display: inline-block;
             font-size: 12px;
-            font-weight: 600;
             padding: 5px 10px;
           }
         }
@@ -93,7 +92,6 @@
       border-radius: 8px;
       margin: auto;
       padding: 6px 30px;
-      font-weight: 700;
       margin-bottom: 30px;
       color: $black-color;
       background-color: $button-color;
@@ -104,6 +102,10 @@
         background-color: $sub-color;
         cursor: pointer;      
       }
+      
+          @include responsive(T) {
+            padding: 10px 50px;
+          }
     }
   }
 
