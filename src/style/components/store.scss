@@ -3,9 +3,10 @@
 
 .store {
   margin-bottom: 30px;
+  
   &__title {
-    font-family: 'Nanum Gothic', sans-serif;
-    font-weight: 800;
+    font-size: 22px;
+    font-weight: 700;
     margin-bottom: 12px;
   }
   &__list {
@@ -16,9 +17,9 @@
     column-gap: 10px;
     .store__item {
       .store__cover {
-        width: 50%;
         position: relative;
         width: 100%;
+        margin-bottom: 8px;
         padding-bottom: 100%;
         overflow: hidden;
         
@@ -37,15 +38,25 @@
         .store__name {
           font-family: $font-main;
           font-weight: 700;
-          font-size: 15px;
+          font-size: 16px;
         }
         .store__rate {
-          font-family: $font-sub;
-          font-weight: 600;
           font-size: 14px;
+          font-weight: 300;
         }
       }
-      
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    @include responsive(T) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include responsive(D) {
+      grid-template-columns: repeat(4, 1fr);
     }
   }
+
 }
