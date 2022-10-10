@@ -2,8 +2,70 @@
 @import '../mixins/responsive';
 
 .detail {
+  .detail__store-info {
+    position: relative;
+    .store__name-rate {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-bottom: 20px;
+      color: $black-color;
+  
+      .detail__store-name {
+        font-size: 18px;
+        font-weight: 600;
+        margin-right: 5px;
+      }
+  
+      .detail__store-rate {
+        font-size: 12px;
+      }
+    }
+  
+    .store__address-operate {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+  
+      .detail__store-address,
+      .detail__store-operate {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: $black-color;
+  
+      }
+      
+      .detail__store-address {
+        margin-bottom: 5px;
+      }
+  
+      .detail__store-operate {
+      }
+    }
+  
+  
+    .detail__store-des {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 75%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      border: 1px solid $main-color;
+      text-align: center;
+      border-radius: 5px;
+  
+      p {
+        padding: 18px;
+        font-size: 14px;
+        color: $black-color;
+      }
+    }
+  }
 
-  &__store-info {
+  &__store-image {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +78,7 @@
       padding-bottom: 70%;
       overflow: hidden;
       border-radius: 10px;
+
       
       .detail__store-cover-img {
         position: absolute;
@@ -26,91 +89,105 @@
         object-fit: cover;
         border-radius: 10px;
       }
+    }
+  }
+  
+  @include responsive(T) {
 
-      @include responsive(T) {
-        width: 60%;
-        height: 50%;
+
+    .detail__store-cover { 
+      margin-bottom: 40px;
+    }
+
+    .detail__store-info {
+      .store__name-rate {
+        .detail__store-name {
+          font-size: 28px;
+        }
+  
+        .detail__store-rate {
+          font-size:18px;
+          padding-bottom: 4px;
+        }
       }
-
-      @include responsive(D) {
+  
+      .store__address-operate {
+        margin-bottom: 36px;
+  
+        .detail__store-address,
+        .detail__store-operate {
+          font-size: 18px;
+        }
+      }
+  
+      .detail__store-des {
         margin-bottom: 60px;
-      }
-    }
-
-    .store__name-rate {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      margin-bottom: 20px;
-      color: $black-color;
-
-      .detail__store-name {
-        font-size: 22px;
-        font-weight: 600;
-        margin-right: 5px;
-      }
-
-      @include responsive(T) {
-        .detail__store-name {
-          margin-right: 10px;
-        }
-      }
-
-      @include responsive(D) {
-        .detail__store-name {
-          font-size: 26px;
-          margin-right: 12px;
-        }
-      }
-    }
-
-    .detail__store-address,
-    .detail__store-operate {
-      display: block;
-      text-align: center;
-      font-weight: 600;
-      color: $black-color;
-
-      }
-    
-    .detail__store-address {
-      margin-bottom: 5px;
-    }
-
-    .detail__store-operate {
-      margin-bottom: 20px;
-
-      @include responsive(D) {
-        margin-bottom: 40px;
-      }
-    }
-
-    .detail__store-des {
-      width: 75%;
-      text-align: center;
-      margin-bottom: 30px;
-      border: 1px solid $main-color;
-      border-radius: 5px;
-
-      p {
-        padding: 15px;
-        font-size: 15px;
-        color: $black-color;
-      }
-      
-      @include responsive(T) {
-        width: 60%;
+  
         p {
-          padding: 20px;
-        }
-      }
-
-      @include responsive(D) {
-        width: 55%;
-        p {
-          padding: 25px;
+          padding: 36px;
+          font-size: 16px;
         }
       }
     }
   }
+
+  @include responsive(D) {
+      .inner {
+        margin-bottom: 30px;
+      }
+
+      &__store-image {
+        width: 50%;
+  
+        .detail__store-cover {
+          .detail__store-cover-img {
+            background-size:100% 100%;
+          }
+        }
+      }   
+      
+      .detail__store-info {
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 40%;
+
+        .store__name-rate {
+          justify-content: flex-start;
+          .detail__store-name {
+            font-size: 28px;
+          }
+    
+          .detail__store-rate {
+            font-size:18px;
+            padding-bottom: 4px;
+          }
+        }
+    
+        .store__address-operate {
+          align-items: flex-start;
+          margin-bottom: 36px;
+    
+          .detail__store-address,
+          .detail__store-operate {
+            font-size: 18px;
+          }
+        }
+        .detail__store-des {
+          left: 0;
+          width: 100%;
+          margin: 0;
+          margin-bottom: 60px;
+          transform: translateX(0);
+    
+          p {
+            padding: 36px;
+            font-size: 16px;
+          }
+        }
+      }
+  
+    
+  }
 }
+  

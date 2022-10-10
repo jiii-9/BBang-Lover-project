@@ -7,8 +7,7 @@ import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import SwiperCore, { Pagination, Navigation } from "swiper";
 
-import Header from "../components/Header";
-import GoBackStore from "../components/GoStore";
+import GoStore from "../components/GoStore";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -18,16 +17,17 @@ function Detail() {
   const selectedStoreInfo = location.state.item;
   const { name } = useParams();
 
-  console.log(selectedStoreInfo.address);
-
   return (
     <section className="detail">
-      <Header />
-      <div className="detail__store-info">
-        <div className="inner">
+      <div className="inner">
+        <div className="detail__store-image">
           <Swiper
             className="detail__store-cover"
             loop={true}
+            autoplay={{
+              deplay: 500,
+              disableOnInteraction: false,
+            }}
             pagination={{ clickable: true }}
           >
             {selectedStoreInfo.subImage.map((item, idx) => {
@@ -43,22 +43,26 @@ function Detail() {
             })}
           </Swiper>
         </div>
-        <div className="store__name-rate">
-          <span className="detail__store-name">{name}</span>
-          <span className="detail__store-rate">{selectedStoreInfo.rate}</span>
-        </div>
-        <span className="detail__store-address">
-          {selectedStoreInfo.address}
-        </span>
-        <span className="detail__store-operate">
-          {selectedStoreInfo.operate}
-        </span>
+        <div className="detail__store-info">
+          <div className="store__name-rate">
+            <span className="detail__store-name">{name}</span>
+            <span className="detail__store-rate">{selectedStoreInfo.rate}</span>
+          </div>
+          <div className="store__address-operate">
+            <span className="detail__store-address">
+              {selectedStoreInfo.address}
+            </span>
+            <span className="detail__store-operate">
+              {selectedStoreInfo.operate}
+            </span>
+          </div>
 
-        <div className="detail__store-des">
-          <p>{selectedStoreInfo.description}</p>
+          <div className="detail__store-des">
+            <p>{selectedStoreInfo.description}</p>
+          </div>
         </div>
       </div>
-      <GoBackStore />
+      <GoStore />
     </section>
   );
 }

@@ -1,4 +1,5 @@
 @import '../constants/color';
+@import '../mixins/responsive';
 
 .go-store {
   display: flex;
@@ -24,9 +25,23 @@
     }
 
     span {
+      font-size: 12px;
       font-weight: 600;
     }
-  }
 
-  
+    @include responsive(T) {
+      
+      width: 150px;
+      height: 44px;
+
+      span {
+        font-size: 16px;
+      }
+    }
+
+    @include responsive(D) {
+      width: 400px;
+      height: 60px;
+    }
+  }
 }

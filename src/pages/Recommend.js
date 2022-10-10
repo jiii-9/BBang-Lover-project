@@ -1,6 +1,5 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import Header from "../components/Header";
 import SelectedButtons from "../components/SelectedButtons";
 import Store from "../components/Store";
 import Footer from "../components/Footer";
@@ -13,7 +12,6 @@ function Recommend() {
 
   return (
     <section className="recommend">
-      <Header />
       <SelectedButtons
         characterList={checkedCharacterList}
         areaList={checkedAreaList}

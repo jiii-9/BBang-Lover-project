@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Start from "./pages/Start";
+import Header from "./components/Header";
 import Home from "./pages/Home";
 import Recommend from "./pages/Recommend";
 import Detail from "./pages/Detail";
 
-import characterData from "./dummy-data/select-data";
-import areaData from "./dummy-data/select-data";
-import newsData from "./dummy-data/news-data";
+import characterData from "./assets/select-data";
+import areaData from "./assets/select-data";
+import newsData from "./assets/news-data";
 
 import "./style/main.scss";
 
@@ -38,8 +38,8 @@ function App() {
         <NewsListContext.Provider value={newsData}>
           <BrowserRouter>
             <div className="App">
+              <Header />
               <Routes>
-                <Route path="/start" element={<Start />} />
                 <Route path="/" element={<Home />} />
                 <Route path="/recommend" element={<Recommend />} />
                 <Route path="/detail/:name" element={<Detail />} />

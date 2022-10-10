@@ -1,4 +1,5 @@
 @import '../constants/color';
+@import '../mixins/responsive';
 
 .selected-btns {
   margin-bottom: 20px;
@@ -15,6 +16,11 @@
       font-weight: 500;
       background-color: $main-color;
       transition: all .3s ease-in-out;
+
+      @include responsive(D) {
+        padding: 8px 14px;
+        font-size: 13px;
+      }
     }
   }
 }
