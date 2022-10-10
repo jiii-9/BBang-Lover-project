@@ -2,8 +2,9 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import SelectedButtons from "../components/SelectedButtons";
-// import SelectedButtons from "../components/SelectedButtons";
 import Store from "../components/Store";
+import Footer from "../components/Footer";
+import GoHomeBtn from "../components/goHomeBtn";
 
 function Recommend() {
   const location = useLocation();
@@ -18,6 +19,8 @@ function Recommend() {
         areaList={checkedAreaList}
       />
       <Store characterList={checkedCharacterList} areaList={checkedAreaList} />
+      <GoHomeBtn />
+      <Footer />
     </section>
   );
 }
