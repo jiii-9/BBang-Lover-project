@@ -76,4 +76,9 @@ const areaData = [
   },
 ];
 
-export default { characterData, areaData };
+const selectData = {
+  characterData,
+  areaData,
+};
+
+export default selectData;
