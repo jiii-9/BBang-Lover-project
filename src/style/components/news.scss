@@ -44,6 +44,9 @@
         width: 210px;
         color: $white-color;
         z-index: 1;
+        white-space: pre-line;
+
+        
       }
       
       .image__bg {
@@ -59,8 +62,9 @@
 
     @include responsive(T) {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       column-gap: 10px;
+      row-gap: 28px;
       
       .news__item {
         
@@ -80,6 +84,10 @@
           background-color: transparent;
         }
       }
+    }
+
+    @include responsive(D) {
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 
