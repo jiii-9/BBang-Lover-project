@@ -22,7 +22,16 @@ function News() {
               <div className="news__image">
                 <img src={process.env.PUBLIC_URL + item.image} alt="news-img" />
               </div>
-              <span className="news-item__title">{item.title}</span>
+              <div className="news-item__title">
+                {item.title.split("\n").map((line, idx) => {
+                  return (
+                    <span key={idx}>
+                      {line}
+                      <br />
+                    </span>
+                  );
+                })}
+              </div>
               <div className="image__bg"></div>
             </li>
           ))}
