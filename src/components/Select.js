@@ -170,7 +170,7 @@ function Select() {
           className="search__btn"
           onClick={() => {
             if (
-              checkedCharacterList.length === 0 &&
+              checkedCharacterList.length === 0 ||
               checkedAreaList.length === 0
             ) {
               window.confirm("찾고싶은 빵을 선택해주세요");
