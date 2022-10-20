@@ -1,95 +1,63 @@
-# Select 버튼 개별 작동
+# 빵방곡곡 프로젝트
 
-### map함수로 중복되는 버튼 만들기
+## ✔️ 프로젝트 시작 계기
 
-```
-<div className={"button__list" + (characterExpanded ? " show" : " hide")}>
-  {characterList.map((item, idx) => (
-    <label
-      className={[
-        "button__item",
-        activeCopy[item.id] ? "active" : null,
-      ].join(" ")}
-      htmlFor={item.name}
-      key={item.id}
-    >
-      <input
-        type="checkbox"
-        id={item.name}
-        className="button__input"
-        value={item.name}
-        name="item-name"
-      />
-      <span className="button__name">{item.name}</span>
-    </label>
-  ))}
-</div>
-```
+<br />
 
--
+<https://bbangbang-gokgok-site.web.app/>
+<br />
+<br />
+어딘가를 가게 되면 항상 빵집을 찾아보는 빵순이 입니다. <br />
+하지만 빵을 찾아봤을 때, 빵집이 나오는 경우보다 빵을 팔고있지 않은 카페가 검색이 되는 경우가 더 많았습니다. <br />
+저처럼 빵을 좋아하는 사람들이 보다 쉽게 원하는 곳을 찾아갈 수 있었으면 하는 마음에 프로젝트를 시작하게 되었습니다.
+<br />
+<br />
 
-### 버튼의 체크여부 확인하기
+<hr />
 
-```
-const [characterActive, setCharacterActive] = useState(
-    Array(characterList.length).fill(false)
-);
-```
+## ✔️ 사용 기술
 
-- 버튼의 개수만큼 배열에 체크상태를 담아준다
-- 기본 체크상태가 담긴 배열을 state에 보관해준다
-- 버튼의 기본 상태는 클릭이 되지 않은 상태이므로 false
+<br />
 
----
+- scss : 프로젝트 전체 스타일링을 했습니다. <br />
+  => 컴포넌트의 덩어리를 한눈에 보기 쉽다는 장점때문에 scss를 사용하였습니다.
+  <br />
+  <br />
+- react <br />
+=> react는 실제 DOM에 적용시키기 전에 가상의 DOM을 만들어 적용을 시킨 후에 최종 완성된 결과만을 실제 DOM에 전달하여 렌더한다는 방식이 react를 선택하게 했습니다. 처음에는 가상의 DOM이라는 개념이 생소해 큰 매력을 느끼지 못했지만, 공부를 하면서 직접 DOM을 조작하는 것 보다 가상 DOM을 조작하는 것이 더 속도적으로 빠르고 효율적이라는 생각이 들었고, SPA로 하나의 페이지로 동작하는 방식이 재미있다고 느껴져서 react를 사용하게 되었습니다.
+<br />
+<br />
+<hr />
 
-```
-const [checkedCharacterList, setCheckedCharacterList] = useState([]);
-let characterActiveCopy = [...characterActive];
-const onCheckedHandler = (checked, item, idx) => {
-  if (checked) {
-    setCheckedList([...checkedList, item]);
-    activeCopy[id] = checked;
-    setIsActive(activeCopy);
-  }
-};
-```
+## ✔️ 빵방곡곡 주요 기능
 
-- 배열을 복사한 activeCopy는 className을 변경할 때 사용되어야하기 때문에, 전역적으로 사용한다
-- e.target.checked가 true면 체크된 버튼을 모아놓는 배열에 추가해준다
-- 클릭된 버튼의 id를 e.target.checked와 같은 상태로 바꿔준 후 상태변경함수로 state를 변경해준다
+<br />
 
-```
-<input
-  type="checkbox"
-  id={item.name}
-  className="button__input"
-  value={item.name}
-  name="item-name"
-  onChange={e => {
-    onCheckedHandler(
-      e.target.checked,
-      e.target.value,
-      idx
-    );
-  }}
-/>
-```
+![bbangbang-gokgok (2)](https://user-images.githubusercontent.com/87428495/196887722-fac4b5c7-8026-4cb8-8e5e-d33df04e36d5.gif)
 
-- input태그 onChange의 onCheckedHandler함수에 클릭된 버튼의 체크여부와, value값, idx를 담아 호출한다
-- 실수했던 점
-  - id는 고유해서 겹치면 안되는데 map함수로 만들었으니 괜찮을거라고 생각해서 area버튼을 클릭하면 character버튼이 동작하는 문제가 발생했다
-  - id가 겹치지 않도록 item.id 에서 item.name으로 변경해주었다
+- 두 개의 카테고리 중 한 가지 선택을 안하면 알림이 뜹니다.
+- 다 선택을 한 후에는 선택한 버튼에 대한 정보를 가지고 그에 맞는 데이터를 보여줍니다.
 
-```
-let characterActiveCopy = [...characterActive];
-<label
-  className={[
-    "button__item",
-    characterActiveCopy[item.id] ? "active" : null,
-  ].join(" ")}
-  htmlFor={item.name}
-  key={item.id}
->
-```
+<br />
+<br />
 
-- 클릭된 버튼의 체크여부에 따라 className에 active를 추가/제거 해주었다
+![bbangbang-gokgok (3)](https://user-images.githubusercontent.com/87428495/196888274-ffabdf03-fadd-4ed8-8cad-90ff4e27c658.gif)
+
+- 골라 들어가면 해당 데이터에 대한 정보를 볼 수 있습니다.
+- <목록으로>, <←> 버튼을 누르면 useNavigate로 한 단계 전 페이지로 이동하게 됩니다.
+
+<hr />
+
+## ✔️ 프로젝트 후기
+
+<br />
+프로젝트를 만드는 데 정말 많은 공부가 필요하다는 걸 느꼈고, 강의를 보면서 혹은 책을 읽으면서 공부한 거 보다 확실히 많은 걸 알게 되었습니다.
+state 사용방법은 강의를 보면서 사용법만 익혀뒀는데 막상 프로젝트에 적용시킬 때, 하나의 state로 같이 관리를 하는 것인지 부터가 헷갈렸는데 프로젝트를 하면서 스스로 모르는 부분을 찾아보고 커뮤니티에 물어봐가며 찾아보니 깨닫게 되는 부분들이 생겼습니다.
+<br />
+<br />
+react를 공부하고서 처음 제대로 뭔가를 만들어 본 프로젝트인지라 많이 부족하지만, 할 수 있는 부분은 최선을 다해서 만들고 부족한 부분은 앞으로도 계속 공부를 하며 채워나가도록 하겠습니다.
+<br />
+<br />
+이제 겨우 하나의 프로젝트이지만 저는 이 작은 프로젝트를 만들면서 뭔가가 해결되었을 때의 희열과 막힐 때의 좌절감조차도 너무 즐거웠습니다.
+<br />
+앞으로 개발을 하며 이 즐거움을 계속해서 느끼고 싶습니다.
