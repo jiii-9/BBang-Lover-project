@@ -33,6 +33,14 @@
 
 <br />
 
+![bbangbang-gokgok (1)](https://user-images.githubusercontent.com/87428495/198953023-1c8a2612-bd50-4a43-ad35-13cd5d7730a2.gif)
+
+- 빵에 관련한 뉴스를 가져와 제일 첫 화면에서 보여줍니다.
+- 뉴스는 js 파일에 모아서 가져왔습니다.
+
+<br />
+<br />
+
 ![bbangbang-gokgok (2)](https://user-images.githubusercontent.com/87428495/196887722-fac4b5c7-8026-4cb8-8e5e-d33df04e36d5.gif)
 
 - 두 개의 카테고리 중 한 가지 선택을 안하면 알림이 뜹니다.
@@ -45,6 +53,17 @@
 
 - 골라 들어가면 해당 데이터에 대한 정보를 볼 수 있습니다.
 - <목록으로>, <←> 버튼을 누르면 useNavigate로 한 단계 전 페이지로 이동하게 됩니다.
+
+<br />
+<br />
+
+![bbangbang-gokgok (4)](https://user-images.githubusercontent.com/87428495/198955451-05eb02d8-7a64-46e7-8cdd-fb3b13ab0424.gif)
+
+- 미디어쿼리를 이용하여 반응형으로 만들었습니다.
+- 선택 버튼 하단 영역은 css display: grid로 개수를 조정하였습니다.
+
+<br />
+<br />
 
 <hr />
 
