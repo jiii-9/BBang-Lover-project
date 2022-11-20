@@ -1,24 +1,22 @@
-@import './constants/color';
-@import './constants/font';
-@import './constants/demensions';
-@import './constants/breakpoint';
+@import "./constants/color";
+@import "./constants/font";
+@import "./constants/demensions";
+@import "./constants/breakpoint";
 
-@import '../App.scss';
-@import './reset.scss';
+@import "../App.scss";
+@import "./reset.scss";
 
+@import "./components/header.scss";
+@import "./components/select.scss";
+@import "./components/news.scss";
+@import "./components/selectedButtons.scss";
+@import "./components/store.scss";
+@import "./components/footer.scss";
+@import "./components/goStore.scss";
+@import "./components/goHome.scss";
+@import "./components/notification.scss";
 
-@import './components/header.scss';
-@import './components/select.scss';
-@import './components/news.scss';
-@import './components/selectedButtons.scss';
-@import './components/store.scss';
-@import './components/footer.scss';
-@import './components/goStore.scss';
-@import './components/goHome.scss';
+@import "./pages/recommend.scss";
+@import "./pages/detail.scss";
 
-@import './pages/recommend.scss';
-@import './pages/detail.scss';
-
-
-@import './mixins/responsive';
-
+@import "./mixins/responsive";
